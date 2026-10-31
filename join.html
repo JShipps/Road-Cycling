@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join the club | Tailwind Road Club</title>
+  <meta name="description" content="Membership options for Tailwind Road Club. Your first two group rides are free.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21 L10 17 L13 19 L19 9 L23 15 L28 13" fill="none" stroke="#e2406f" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg><span>Tailwind Road Club</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rides.html">Group rides</a></li>
+        <li><a href="routes.html">Routes</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="wrap">
+        <h1>Join the club</h1>
+        <p class="lede">Ride with us twice for free. If you'd like to keep riding, pick a membership below. It covers insurance, coaching sessions and kit at cost.</p>
+      </div>
+    </header>
+
+    <section class="section flush-top" aria-labelledby="tiers-title">
+      <div class="wrap">
+        <h2 id="tiers-title" class="visually-hidden">Membership options</h2>
+        <div class="tiers">
+          <article class="tier">
+            <h3>Trial</h3>
+            <p class="price">Free</p>
+            <p class="note">Two group rides</p>
+            <ul>
+              <li>Any ride in the schedule</li>
+              <li>A ride leader to help you find your group</li>
+              <li>Covered by club guest insurance</li>
+            </ul>
+            <a class="btn btn-ghost" href="#signup">Book a trial ride</a>
+          </article>
+          <article class="tier featured">
+            <span class="flag">Most members choose this</span>
+            <h3>Full member</h3>
+            <p class="price">$45<small> / year</small></p>
+            <p class="note">Less than a dollar a week</p>
+            <ul>
+              <li>Unlimited group rides</li>
+              <li>Third-party insurance on and off club rides</li>
+              <li>Monthly skills and hill coaching</li>
+              <li>Club kit at cost</li>
+              <li>Vote at the annual meeting</li>
+            </ul>
+            <a class="btn btn-primary" href="#signup">Become a member</a>
+          </article>
+          <article class="tier">
+            <h3>Family</h3>
+            <p class="price">$70<small> / year</small></p>
+            <p class="note">Two adults and under-18s at one address</p>
+            <ul>
+              <li>Everything in full membership</li>
+              <li>Junior rides in the school holidays</li>
+              <li>Under-16s ride with a parent or guardian</li>
+            </ul>
+            <a class="btn btn-ghost" href="#signup">Join as a family</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="signup" aria-labelledby="signup-title">
+      <div class="wrap split">
+        <div>
+          <h2 id="signup-title">Tell us about your riding</h2>
+          <p class="muted">A ride leader will reply within two days with the best first ride for you.</p>
+
+          <!-- Set action="" to your form service, e.g. https://formspree.io/f/xxxx. With no action the form shows a demo confirmation. -->
+          <form class="form" data-join-form novalidate>
+            <div class="row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required data-error="Enter your name.">
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required data-error="Enter an email address like name@example.com.">
+              </div>
+            </div>
+            <div class="field">
+              <label for="membership">Membership</label>
+              <select id="membership" name="membership">
+                <option>Trial (two free rides)</option>
+                <option selected>Full member</option>
+                <option>Family</option>
+              </select>
+            </div>
+            <fieldset class="field">
+              <legend>Which group sounds like you?</legend>
+              <div class="radio-row">
+                <label><input type="radio" name="group" value="A"> A (32+ km/h)</label>
+                <label><input type="radio" name="group" value="B"> B (28–31)</label>
+                <label><input type="radio" name="group" value="C"> C (24–27)</label>
+                <label><input type="radio" name="group" value="S" checked> Social (20–23)</label>
+                <label><input type="radio" name="group" value="unsure"> Not sure</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="message">Anything we should know?</label>
+              <textarea id="message" name="message"></textarea>
+              <p class="hint">Optional. Recent rides, goals, or questions about the club.</p>
+            </div>
+            <div><button class="btn btn-primary" type="submit">Send to a ride leader</button></div>
+          </form>
+          <div class="form-status" data-form-status tabindex="-1" role="status" hidden>
+            <strong>Sent to a ride leader.</strong> Look out for a reply within two days with your first ride.
+          </div>
+        </div>
+
+        <div class="faq">
+          <h2>Questions</h2>
+          <details>
+            <summary>What kind of bike do I need?</summary>
+            <p>A road bike or a fast gravel bike with road tires, in good working order. Flat bars are fine in the social group.</p>
+          </details>
+          <details>
+            <summary>What happens if I get a puncture?</summary>
+            <p>The group stops and waits. Ride leaders carry spares and will help you fix it.</p>
+          </details>
+          <details>
+            <summary>Will I get dropped?</summary>
+            <p>Not on a club ride. Every group regroups at the top of each climb and at junctions, and the sweep rides at the back.</p>
+          </details>
+          <details>
+            <summary>Do rides go ahead in the rain?</summary>
+            <p>Yes, unless there's ice, snow or a severe weather warning. Ride leaders post cancellations in the club chat by 7:00.</p>
+          </details>
+          <details>
+            <summary>Can I cancel my membership?</summary>
+            <p>Yes. Email the membership secretary and we'll refund the months you haven't used.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21 L10 17 L13 19 L19 9 L23 15 L28 13" fill="none" stroke="#e2406f" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg><span>Tailwind Road Club</span></a>
+          <p>Group road rides for every pace, every weekend, from the old mill parking lot on Station Road.</p>
+        </div>
+        <div>
+          <h3>Ride</h3>
+          <ul>
+            <li><a href="rides.html">Weekly schedule</a></li>
+            <li><a href="routes.html">Route library</a></li>
+            <li><a href="rides.html#etiquette">Group riding basics</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Club</h3>
+          <ul>
+            <li><a href="about.html">Our story</a></li>
+            <li><a href="about.html#leaders">Ride leaders</a></li>
+            <li><a href="join.html">Membership</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <ul>
+            <li><a href="#">Strava club</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>&copy; <span data-year>2026</span> Tailwind Road Club</span>
+        <span>Free template. Replace this line with your own credit.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
