@@ -4,8 +4,6 @@ A free, six-page website template for road cycling clubs, group rides, coaches a
 
 Its main feature is a set of **stage-style elevation profiles**, like the route charts in a race road book. They're drawn from a simple list of numbers, so you can add your own routes without opening a design tool.
 
-**[Download on templategalaxy](https://templategalaxy.sbs)**
-
 ![Home page with the featured ride and its elevation profile](screenshots/home.png)
 
 ## Pages
