@@ -4,7 +4,7 @@ A free, six-page website template for road cycling clubs, group rides, coaches a
 
 Its main feature is a set of **stage-style elevation profiles**, like the route charts in a race road book. They're drawn from a simple list of numbers, so you can add your own routes without opening a design tool.
 
-**[Live demo](https://YOUR-USERNAME.github.io/road-cycling/)** · **[Download on templategalaxy](https://templategalaxy.sbs)**
+**[Download on templategalaxy](https://templategalaxy.sbs)**
 
 ![Home page with the featured ride and its elevation profile](screenshots/home.png)
 
@@ -42,19 +42,6 @@ Its main feature is a set of **stage-style elevation profiles**, like the route 
 - Every color, font size and layout width set as a CSS variable in one place
 - Accessibility basics included: skip link, visible keyboard focus, labelled fields, reduced-motion support, and text alternatives for every profile
 - No dependencies apart from the Archivo font from Google Fonts
-
-## Quick start
-
-1. [Download the ZIP](https://github.com/YOUR-USERNAME/road-cycling/archive/refs/heads/main.zip) or clone the repository:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/road-cycling.git
-   ```
-2. Open `index.html` in your browser. That's it, there's nothing to build.
-3. Edit the content, swap in your own photos, and upload the folder to any web host.
-
-### Publish free with GitHub Pages
-
-In your repository on GitHub, go to **Settings → Pages**. Under **Source**, choose **Deploy from a branch**, pick `main` and `/ (root)`, then click **Save**. The site will be live at `https://YOUR-USERNAME.github.io/road-cycling/` within a minute or two.
 
 ## File structure
 
